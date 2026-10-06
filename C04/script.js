@@ -5,9 +5,9 @@
 const SOUNDS = [
   'assets/ C04-S01-Cupboard.wav',
   'assets/ C04-S02-Chopped.wav',
-  'assets/ C04-S03-IDK_FAV.wav',
-  'assets/ C04-S04-itclicks.wav',
-  'assets/ C04-S05-sixstickskiss_fav.wav',
+  'assets/C04-S03-IDK_FAV.wav',
+  'assets/C04-S04-itclicks.wav',
+  'assets/C04-S05-sixstickskiss_fav.wav',
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
