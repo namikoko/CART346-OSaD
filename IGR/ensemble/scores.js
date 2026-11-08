@@ -140,5 +140,33 @@ const SCORES = [
       { at: '0:00', groups: 'D', play: 'demo/multitrack-test/d', ratio: 1.0},
       { at: '5:00', groups: 'all', stop: 'all', fade: 1 },
     ],
-  },   
+  },
+
+  {
+    title: 'C08 · Gutter',
+    credit: 'Namiko',
+    groups: 3,
+    events: [
+      // a single leak
+      { at: '0:00', groups: 'A',   play: 'namikoko/C08-S01-drip',     ratio: 1.003, level: 0.9,  fade: 0.5 },
+      // the roof answers
+      { at: '0:12', groups: 'B',   play: 'namikoko/C08-S05-tin',      ratio: 1.007, level: 0.8,  fade: 1 },
+      { at: '0:20', spread: 1.02, glide: 20 },
+      // a glass rings and beats against itself
+      { at: '0:40', groups: 'C',   play: 'namikoko/C08-S04-glass',    ratio: 1.001, level: 0.45, fade: 6 },
+      // the drops thin out, a voice rises under them
+      { at: '1:00', groups: 'A',   stop: 'namikoko/C08-S01-drip', fade: 8 },
+      { at: '1:02', groups: 'A',   play: 'namikoko/C08-S02-ah',       ratio: 1.004, level: 0.65, fade: 10 },
+      { at: '1:10', spread: 1.04, glide: 25 },
+      // weather takes over
+      { at: '1:35', groups: 'B',   stop: 'namikoko/C08-S05-tin', fade: 6 },
+      { at: '1:36', groups: 'B',   play: 'namikoko/C08-S03-wind_FAV', ratio: 1.01,  level: 0.85, fade: 8 },
+      { at: '1:50', groups: 'C',   stop: 'namikoko/C08-S04-glass', fade: 12 },
+      { at: '2:00', groups: 'A',   stop: 'namikoko/C08-S02-ah', fade: 15 },
+      // one last leak before it clears
+      { at: '2:08', groups: 'C',   play: 'namikoko/C08-S01-drip',     ratio: 1.0,   level: 0.6,  fade: 2 },
+      { at: '2:20', groups: 'all', stop: 'all', fade: 10 },
+    ],
+    end: '2:30',
+  },
 ];
