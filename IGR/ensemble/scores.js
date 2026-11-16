@@ -169,4 +169,34 @@ const SCORES = [
     ],
     end: '2:30',
   },
+
+  {
+    title: 'C09 · Drift Machine',
+    credit: 'Namiko',
+    groups: 4,
+    events: [
+      // one pulse, then a second in unison
+      { at: '0:00', groups: 'A',   play: 'namikoko/C09-S01-pulse',     ratio: 1.0,   level: 0.8,  fade: 2 },
+      { at: '0:12', groups: 'B',   play: 'namikoko/C09-S01-pulse',     ratio: 1.0,   level: 0.8,  fade: 2 },
+      // the groups start to slide apart
+      { at: '0:24', spread: 1.005, glide: 20 },
+      // the filter sweep opens underneath
+      { at: '0:40', groups: 'C',   play: 'namikoko/C09-S02-sweep',     ratio: 1.0,   level: 0.55, fade: 6 },
+      // twelve notes against themselves
+      { at: '1:00', groups: 'D',   play: 'namikoko/C09-S03-phase_FAV', ratio: 1.01,  level: 0.7,  fade: 3 },
+      // the pulse turns into an octave bass
+      { at: '1:20', groups: 'A',   stop: 'namikoko/C09-S01-pulse', fade: 6 },
+      { at: '1:22', groups: 'A',   play: 'namikoko/C09-S04-octaves',   ratio: 1.002, level: 0.75, fade: 4 },
+      { at: '1:40', spread: 1.01, glide: 20 },
+      // everything thins out into random notes
+      { at: '1:55', groups: 'B',   stop: 'namikoko/C09-S01-pulse', fade: 8 },
+      { at: '2:00', groups: 'C',   stop: 'namikoko/C09-S02-sweep', fade: 10 },
+      { at: '2:05', groups: 'B',   play: 'namikoko/C09-S05-drift',     ratio: 1.003, level: 0.8,  fade: 8 },
+      { at: '2:15', groups: 'D',   stop: 'namikoko/C09-S03-phase_FAV', fade: 10 },
+      // freeze the phases and let it go
+      { at: '2:20', spread: 1.0, glide: 15 },
+      { at: '2:35', groups: 'all', stop: 'all', fade: 10 },
+    ],
+    end: '2:50',
+  },
 ];

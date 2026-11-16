@@ -8,6 +8,7 @@
 - [Never still, always changing](./C06)
 - [Make a sound that doesn't exist in the real world](./C07)
 - [Make a score with sounds that want to be multiplied](./C08)
+- [Five synth patterns, one mini-score](./C09)
 - [_It's gonna rain_ app](./IGR/ensemble/conductor.html)
 
 ## One-Sound-a Day 
